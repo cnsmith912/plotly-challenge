@@ -1,5 +1,5 @@
 function createCharts(sample) {
-    d3.json("samples.json").then((Data)=> {
+    d3.json("./samples.json").then((Data)=> {
         var sampleresult = Data.samples.filter(sampleObject => sampleObject.id == sample);
         result = sampleresult[0];
 
